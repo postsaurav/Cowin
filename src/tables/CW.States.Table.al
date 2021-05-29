@@ -20,5 +20,28 @@ table 70000 "Cw States"
         {
             Clustered = true;
         }
+        key(SK; Name)
+        { }
     }
+    fieldgroups
+    {
+        fieldgroup(DropDown; Name) { }
+        fieldgroup(Brick; Name) { }
+    }
+
+    procedure LookupStates(var States: Record "Cw States"): Boolean
+    var
+        Result: Boolean;
+        StateLookup: Page "CW States";
+    begin
+        StateLookup.SETTABLEVIEW(States);
+        StateLookup.SETRECORD(States);
+        StateLookup.LOOKUPMODE := TRUE;
+        Result := StateLookup.RUNMODAL = ACTION::LookupOK;
+        IF Result THEN
+            StateLookup.GETRECORD(States)
+        ELSE
+            CLEAR(States);
+        EXIT(Result);
+    end;
 }
