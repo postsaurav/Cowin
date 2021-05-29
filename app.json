@@ -1,0 +1,30 @@
+{
+  "id": "9056db21-e8c2-4138-8923-ba61aba66203",
+  "name": "Cowin Helper",
+  "publisher": "Saurav Dhyani",
+  "brief": "This app is supposed to help Indians for check avilable slot for Cowin.",
+  "description": "",
+  "version": "1.18.0.0",
+  "runtime": "7.0",
+  "privacyStatement": "https://www.cowin.gov.in/home",
+  "EULA": "https://www.sauravdhyani.com/",
+  "help": "https://apisetu.gov.in/public/marketplace/api/cowin",
+  "contextSensitiveHelpUrl": "https://www.sauravdhyani.com/",
+  "url": "https://www.sauravdhyani.com/",
+  "logo": "image/sauravdhyani.png",
+  "dependencies": [
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 60000,
+      "to": 99999
+    }
+  ],
+  "features": [
+    "TranslationFile"
+  ],
+  "showMyCode": true
+}
