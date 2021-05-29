@@ -1,0 +1,5 @@
+{
+    "mandatoryAffixes": ["CW"],
+    "mandatoryPrefix": "CW",
+    "supportedCountries": ["IN"]
+}
